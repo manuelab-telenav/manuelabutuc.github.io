@@ -3,10 +3,12 @@
     <head>
         <title>OSM QA tool</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
         <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
     </head>
 
     <body>
@@ -41,7 +43,7 @@
                     <label><input type="checkbox"  id="layer2" onchange="showOnMap(this.id)" value=""><img src='images/marker2.png' height='20px'>Duplicated ways</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" id="layer3" onchange="showOnMap(this.id)" value=""><img src='images/marker3.png' height='20px'>Orphan nodes</label>
+                    <label><input type="checkbox" id="layer3" onchange="showOnMap(this.id)" value=""><img src='images/marker3.png' height='20px'>Overlapping buildings</label>
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox" id="layer4" onchange="showOnMap(this.id)" value=""><img src='images/marker4.png' height='20px'>Orphan ways</label>
@@ -50,9 +52,11 @@
     
             <div id="map" class="col-md-9 col-sm-9 col-xs-10" style="margin-top:1vh; height: 89vh; border: 1px solid #AAA;"></div>
         </div>
-        <footer class="footer col-md-12">
+        <div style="height:2vh">
+        <footer class="footer col-md-12" style="height:2vh">
             <p class="text-muted" style="height:2vh">2016 | designed and developed by <a href="https://ro.linkedin.com/in/butuc-manuela-23b4a966" target='_blank'>Manuela Butuc</a></p>
         </footer>
+        </div>
     </div>
 
     <script type='text/javascript' src='db/possible_roundabouts.geojson'></script>
